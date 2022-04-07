@@ -33,6 +33,7 @@ app.get("/api/posts", (req,res) => {
 });
 
 app.get("/api/categories", (req,res)=>{
+    console.log("test");
     data.getCategories().then((data)=>{
         res.json(data);
     })
